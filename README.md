@@ -17,8 +17,8 @@ $ docker-compose up -d --build
 
 ## Usage
 ```
-docker-compose exec db bash
-psql -U admin
+$ docker-compose exec db bash
+$ psql -U admin
 ```
 
 ## Document
