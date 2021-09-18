@@ -14,3 +14,4 @@ services:
       - ./db-data:/var/lib/postgresql/data
     stdin_open: true
     tty: true
+    command: ["sleep", "infinity"]
