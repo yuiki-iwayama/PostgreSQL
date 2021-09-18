@@ -10,15 +10,15 @@
 
 ## Install
 ```
-git clone https://github.com/yuiki-iwayama/PostgreSQL-Docker
-cd PostgreSQL-Docker
-docker-compose up -d --build
+$ git clone https://github.com/yuiki-iwayama/PostgreSQL-Docker
+$ cd PostgreSQL-Docker
+$ docker-compose up -d --build
 ```
 
 ## Usage
 ```
-docker-compose exec db bash
-psql -U admin
+$ docker-compose exec db bash
+$ psql -U admin
 ```
 
 ## Document
