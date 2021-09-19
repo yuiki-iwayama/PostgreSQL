@@ -2,7 +2,7 @@
 
 ## Overview
 - PostgreSQL:alpine13.4の環境
-- JupyterLab接続確認用に作成
+- Dockerでの立ち上げ練習用に作成
 
 ## 動作環境（確認済）
 - macOS BigSur 11.5.1
