@@ -18,7 +18,7 @@ $ docker-compose up -d --build
 ## Usage
 ```
 $ docker-compose exec db bash
-$ psql -U admin
+# psql -U admin -h localhost -d analysis
 ```
 
 ## Document
