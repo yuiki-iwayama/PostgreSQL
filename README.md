@@ -10,7 +10,7 @@
 
 ## Install
 ```
-$ git clone https://github.com/yuiki-iwayama/PostgreSQL-Docker
+$ git clone git@github.com:yuiki-iwayama/PostgreSQL-Docker.git
 $ cd PostgreSQL-Docker
 $ docker-compose up -d --build
 ```
