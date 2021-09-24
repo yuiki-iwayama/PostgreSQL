@@ -2,7 +2,7 @@
 
 ## Overview
 - PostgreSQL:alpine13.4の環境
-- GUIはpgadmin4で接続も可能
+- GUIはpgdmin4で接続も可能
 
 ## 動作環境（確認済）
 - macOS BigSur 11.5.1
