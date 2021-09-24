@@ -1,1 +1,2 @@
-db-data
+# volumes配下は除外する
+volumes/
