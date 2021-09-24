@@ -30,4 +30,5 @@ $ docker-compose exec db bash
 https://www.souya.biz/blog2/pinevillage/2021/03/07/post-0/
 
 ## Document
-- データベースを永続化するために./db-dataを配置
+- Postgresを永続化するために./volumes/db-dataを配置
+- pdAdmin４を永続化するために./volumes/pgadmin4-volumeを配置
