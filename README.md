@@ -19,7 +19,7 @@ $ docker-compose up -d --build
 - コンテナでSQLを直接操作
 ```
 $ docker-compose exec db bash
-# psql -U admin -h localhost -d analysis
+# psql -U admin -h localhost
 ```
 
 - pgAdmin4アプリで操作
