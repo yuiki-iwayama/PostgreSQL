@@ -23,7 +23,7 @@ $ docker-compose exec db bash
 ```
 
 - pgadminで操作
-1. localhost:8000に接続する
+1. http://localhost:8000に接続する
 2. __General__でデータベースの任意の名前を入力する
 3. __Connection__でdocker-compose.ymlのpostgres側の情報を入力する
 
