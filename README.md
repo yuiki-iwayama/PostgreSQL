@@ -32,4 +32,4 @@ https://www.souya.biz/blog2/pinevillage/2021/03/07/post-0/
 
 ## Document
 - Postgresを永続化するためにdb-dataを配置
-- pgAdmin4からもdb-dataへ接続する
+- pgAdmin4を永続化するためにpgadmin-volumeを配置
