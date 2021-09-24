@@ -10,7 +10,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - ./volumes/db-data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
     stdin_open: true
     tty: true
 
@@ -23,7 +23,9 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./volumes/pgadmin4-volume:/var/lib/pgadmin
+      - db-data:/var/lib/pgadmin
     depends_on:
       - postgres
     restart: always
+volumes:
+  db-data:
