@@ -2,7 +2,7 @@
 
 ## Overview
 - PostgreSQL:alpine13.4の環境
-- Dockerでの立ち上げ練習用に作成
+- GUIはpgadmin4で接続も可能
 
 ## 動作環境（確認済）
 - macOS BigSur 11.5.1
@@ -16,10 +16,18 @@ $ docker-compose up -d --build
 ```
 
 ## Usage
+- コンテナでSQLを直接操作
 ```
 $ docker-compose exec db bash
-# psql -U admin -h localhost -d analysis
+# psql -U admin -h localhost
 ```
+
+- pgadminで操作
+1. __General__でデータベースの任意の名前を入力する
+2. __Connection__でdocker-compose.ymlのpostgres側の情報を入力する
+
+※下記を参照する
+https://www.souya.biz/blog2/pinevillage/2021/03/07/post-0/
 
 ## Document
 - データベースを永続化するために./db-dataを配置

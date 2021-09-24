@@ -1,15 +1,29 @@
-version: '3'
+version: "3"
 services:
-  db:
+  postgres:
     image: postgres:13.4-alpine
+    hostname: postgres
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: analysis
       POSTGRES_INITDB_ARGS: --encoding=UTF-8 --locale=ja_JP.UTF-8
     ports:
       - 5432:5432
     volumes:
-      - ./db-data:/var/lib/postgresql/data
+      - ./volumes/db-data:/var/lib/postgresql/data
     stdin_open: true
     tty: true
+
+  pgadmin:
+    image: dpage/pgadmin4
+    hostname: pgadmin
+    environment:
+        PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+        PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - 8000:80
+    volumes:
+      - ./volumes/pgadmin4-volume:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    restart: always
